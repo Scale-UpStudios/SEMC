@@ -21,7 +21,7 @@
     
     <link href="Content/css/header-1.css"  rel="stylesheet" />
     <link href="Content/css/layout-shop.css"  rel="stylesheet" />
-    
+    <link href="Content/css/core.css"  rel="stylesheet" />    
     
     
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -30,323 +30,331 @@
 <body class="smoothscroll enable-animation">
     
     
-    <!-- wrapper -->
-		<div id="wrapper">
-
-			<!-- Top Bar -->
-            <div id="topBar" class="dark">
+    <div id="wrapper">
+        
+        <!-- Top Bar -->
+        <div id="topBar" class="dark">
+            <div class="container">
+                
+                <!-- right -->
+                <ul class="top-links list-inline float-right">
+                    <li class="text-welcome hidden-xs-down">Welcome, <strong>John Doe</strong></li>
+                    <li>
+                        <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><i class="fa fa-user hidden-xs-down"></i> MY ACCOUNT</a>
+                        <ul class="dropdown-menu float-right">
+                            <li><a tabindex="-1" href="#"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#"><i class="fa fa-bookmark"></i> MY WISHLIST</a></li>
+                            <li><a tabindex="-1" href="#"><i class="fa fa-edit"></i> MY REVIEWS</a></li>
+                            <li><a tabindex="-1" href="#"><i class="fa fa-cog"></i> MY SETTINGS</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-off"></i> LOGOUT</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs-down"><a href="page-login-1.html">LOGIN</a></li>
+                    <li class="hidden-xs-down"><a href="page-register-1.html">REGISTER</a></li>
+                </ul>
+                
+                <!-- left -->
+                <ul class="top-links list-inline">
+                    <li class="hidden-xs-down"><a href="page-faq-1.html">FAQ</a></li>
+                    <li>
+                        <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">USD</a>
+                        <ul class="dropdown-langs dropdown-menu">
+                            <li><a tabindex="-1" href="#">USD</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#">EUR</a></li>
+                            <li><a tabindex="-1" href="#">GBP</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- /Top Bar -->
+        
+        <!-- 
+            AVAILABLE HEADER CLASSES
+            
+            Default nav height: 96px
+            .header-md 		= 70px nav height
+            .header-sm 		= 60px nav height
+            
+            .b-0 		= remove bottom border (only with transparent use)
+            .transparent	= transparent header
+            .translucent	= translucent header
+            .sticky			= sticky header
+            .static			= static header
+            .dark			= dark header
+            .bottom			= header on bottom
+            
+            shadow-before-1 = shadow 1 header top
+            shadow-after-1 	= shadow 1 header bottom
+            shadow-before-2 = shadow 2 header top
+            shadow-after-2 	= shadow 2 header bottom
+            shadow-before-3 = shadow 3 header top
+            shadow-after-3 	= shadow 3 header bottom
+            
+            .clearfix		= required for mobile menu, do not remove!
+            
+            Example Usage:  class="clearfix sticky header-sm transparent b-0"
+        -->
+        <div id="header" class="navbar-toggleable-md sticky clearfix">
+            
+            <!-- SEARCH HEADER -->
+            <!-- <div class="search-box over-header">
+                <a id="closeSearch" href="#" class="fa fa-remove"></a>
+                
+                <form action="page-search-result-1.html" method="get">
+                    <input type="text" class="form-control" placeholder="SEARCH" />
+                </form>
+            </div>  -->
+            <!-- /SEARCH HEADER -->
+            
+            
+            <!-- TOP NAV -->
+            <header id="topNav">
                 <div class="container">
                     
-                    <!-- right -->
-                    <ul class="top-links list-inline float-right">
-                        <li class="text-welcome hidden-xs-down">Welcome, <strong>John Doe</strong></li>
-                        <li>
-                            <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><i class="fa fa-user hidden-xs-down"></i> MY ACCOUNT</a>
-                            <ul class="dropdown-menu float-right">
-                                <li><a tabindex="-1" href="#"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
-                                <li class="divider"></li>
-                                <li><a tabindex="-1" href="#"><i class="fa fa-bookmark"></i> MY WISHLIST</a></li>
-                                <li><a tabindex="-1" href="#"><i class="fa fa-edit"></i> MY REVIEWS</a></li>
-                                <li><a tabindex="-1" href="#"><i class="fa fa-cog"></i> MY SETTINGS</a></li>
-                                <li class="divider"></li>
-                                <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-off"></i> LOGOUT</a></li>
-                            </ul>
-                        </li>
-                        <li class="hidden-xs-down"><a href="page-login-1.html">LOGIN</a></li>
-                        <li class="hidden-xs-down"><a href="page-register-1.html">REGISTER</a></li>
-                    </ul>
+                    <!-- Mobile Menu Button -->
+                    <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
                     
-                    <!-- left -->
-                    <ul class="top-links list-inline">
-                        <li class="hidden-xs-down"><a href="page-faq-1.html">FAQ</a></li>
-                        <li>
-                            <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">USD</a>
-                            <ul class="dropdown-langs dropdown-menu">
-                                <li><a tabindex="-1" href="#">USD</a></li>
-                                <li class="divider"></li>
-                                <li><a tabindex="-1" href="#">EUR</a></li>
-                                <li><a tabindex="-1" href="#">GBP</a></li>
-                            </ul>
-                        </li>
+                    <!-- BUTTONS -->
+                    <ul class="float-right nav nav-pills nav-second-main">
+                        
+                        <!-- SEARCH -->
+                        <!-- <li class="search">
+                            <a href="javascript:;">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li> -->
+                        <!-- /SEARCH -->
+                        
+                        
                     </ul>
+                    <!-- /BUTTONS -->
+                    
+                    <!-- Logo -->
+                    <a class="logo float-left" href="index.html">
+                        SEMC
+                        <!-- <img src="" alt="South East Market Corporation logo" /> -->
+                        <!-- <img src="Content/images/_smarty/logo_dark.png" alt="company logo" /> -->
+                    </a>
+                    
+                    <!-- 
+                        Top Nav 
+                        
+                        AVAILABLE CLASSES:
+                        submenu-dark = dark sub menu
+                    -->
+                    <div class="navbar-collapse collapse float-right nav-main-collapse">
+                        <div class="search-container float-left">
+                            <form action="search.html" method="get">
+                                <input type="text" class="form-control" placeholder="SEARCH" />
+                                <i class="fa fa-search"></i>
+                            </form>
+                        </div>
+
+                        <nav class="nav-main">
+                            
+                            <!--
+                                NOTE
+                                
+                                For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+                                Direct Link Example: 
+                                
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                            -->
+                            <ul id="topMain" class="nav nav-pills nav-main">
+                                <li class="dropdown mega-menu"><!-- SHOP -->
+                                    <a class="dropdown-toggle" href="#">
+                                        SHOP
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-animations.html">ANIMATIONS</a></li>
+                                                        <li><a href="shortcode-buttons.html">BUTTONS</a></li>
+                                                        <li><a href="shortcode-carousel.html">CAROUSEL</a></li>
+                                                        <li><a href="shortcode-charts.html">GRAPHS</a></li>
+                                                        <li><a href="shortcode-clients.html">CLIENTS</a></li>
+                                                        <li><a href="shortcode-columns.html">GRID &amp; COLUMNS</a></li>
+                                                        <li><a href="shortcode-counters.html">COUNTERS</a></li>
+                                                        <li><a href="shortcode-forms.html">FORM ELEMENTS</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-dividers.html">DIVIDERS</a></li>
+                                                        <li><a href="shortcode-icon-boxes.html">BOXES &amp; ICONS</a></li>
+                                                        <li><a href="shortcode-galleries.html">GALLERIES</a></li>
+                                                        <li><a href="shortcode-headings.html">HEADING STYLES</a></li>
+                                                        <li><a href="shortcode-icon-lists.html">ICON LISTS</a></li>
+                                                        <li><a href="shortcode-labels.html">LABELS &amp; BADGES</a></li>
+                                                        <li><a href="shortcode-lightbox.html">LIGHTBOX</a></li>
+                                                        <li><a href="shortcode-forms-editors.html">HTML EDITORS</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-cards.html">Cards</a></li>
+                                                        <li><a href="shortcode-maps.html"><span class="badge badge-success float-right">new</span> MAPS</a></li>
+                                                        <li><a href="shortcode-media-embeds.html">MEDIA EMBEDS</a></li>
+                                                        <li><a href="shortcode-modals.html">MODAL / POPOVER / NOTIF</a></li>
+                                                        <li><a href="shortcode-navigations.html">NAVIGATIONS</a></li>
+                                                        <li><a href="shortcode-paginations.html">PAGINATIONS</a></li>
+                                                        <li><a href="shortcode-progress-bar.html">PROGRESS BARS</a></li>
+                                                        <li><a href="shortcode-widgets.html">WIDGETS</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-pricing.html">PRICING BOXES</a></li>
+                                                        <li><a href="shortcode-process-steps.html">PROCESS STEPS</a></li>
+                                                        <li><a href="shortcode-callouts.html">CALLOUTS</a></li>
+                                                        <li><a href="shortcode-info-bars.html">INFO BARS</a></li>
+                                                        <li><a href="shortcode-blockquotes.html">BLOCKQUOTES</a></li>
+                                                        <li><a href="shortcode-responsive.html">RESPONSIVE</a></li>
+                                                        <li><a href="shortcode-sections.html">SECTIONS</a></li>
+                                                        <li><a href="shortcode-social-icons.html">SOCIAL ICONS</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-alerts.html">ALERTS</a></li>
+                                                        <li><a href="shortcode-styled-icons.html">STYLED ICONS</a></li>
+                                                        <li><a href="shortcode-tables.html">TABLES</a></li>
+                                                        <li><a href="shortcode-tabs.html">TABS</a></li>
+                                                        <li><a href="shortcode-testimonials.html">TESTIMONIALS</a></li>
+                                                        <li><a href="shortcode-thumbnails.html">THUMBNAILS</a></li>
+                                                        <li><a href="shortcode-toggles.html">TOGGLES</a></li>
+                                                        <li><a href="shortcode-material-design-badges.html"><span class="badge badge-danger float-right">new</span> <b>MATERIAL DESIGN</b></a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><!-- ABOUT -->
+                                    <a href="about.html">ABOUT</a>
+                                </li>
+                                <li><!-- CONTACT -->
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li><!-- FAQ -->
+                                    <a href="#">FAQ</a>
+                                </li>
+                                
+                                
+                                
+                                
+                                <!-- 
+                                    MENU ANIMATIONS
+                                    .nav-animate-fadeIn
+                                    .nav-animate-fadeInUp
+                                    .nav-animate-bounceIn
+                                    .nav-animate-bounceInUp
+                                    .nav-animate-flipInX
+                                    .nav-animate-flipInY
+                                    .nav-animate-zoomIn
+                                    .nav-animate-slideInUp
+                                    
+                                    .nav-hover-animate 		= animate text on hover
+                                    
+                                    .hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+                                -->
+                                <!-- <li class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+                                    <a class="dropdown-toggle noicon" href="#">
+                                        <span class="badge badge-danger float-right fs-11">v2</span>
+                                        <b>NEW</b>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-clean">
+                                        <li>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>PACKS : READY TO USE</span></li>
+                                                        <li class="divider"></li>
+                                                        <li>
+                                                            <span class="fs-11 mt-0 pb-15 pt-15 text-info">NEW AND HOT: COMPLETE PACKAGES READY TO USE</span>
+                                                        </li>
+                                                        <li class="divider"></li>
+                                                        <li><a target="_blank" href="pack-realestate-home-1.html">REAL ESTATE</a></li>
+                                                        <li><a target="_blank" href="pack-megashop-home-1.html">MEGA SHOP</a></li>
+                                                        <li><a target="_blank" href="pack-hotel-home-1.html">HOTEL v1</a></li>
+                                                        <li><a target="_blank" href="pack-hotel-v2-home-1.html">HOTEL v2</a></li>
+                                                        <li><a target="_blank" href="pack-photography-home-1.html">PHOTOGRAPHY / PORTFOLIO</a></li>
+                                                        <li><a target="_blank" href="pack-caffe-home-1.html">CAFFE</a></li>
+                                                        <li><a target="_blank" href="pack-caffe-onepage.html">CAFFE - ONEPAGE</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>NEW PAGES</span></li>
+                                                        <li><a target="_blank" href="portfolio-single-project.html">PORTFOLIO SINGLE</a></li>
+                                                        <li><a target="_blank" href="page-cookie-alert.html">COOKIE ALERT</a></li>
+                                                        <li><a target="_blank" href="page-category.html">CATEGORY PAGE</a></li>
+                                                        
+                                                        <li><span>IMPROVED</span></li>
+                                                        <li><a target="_blank" href="index-thematics-hosting.html">HOMEPAGE : <b>HOSTING</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-restaurant.html">HOMEPAGE : <b>RESTAURANT</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-lawyer.html">HOMEPAGE : <b>LAWYER</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-fashion.html">HOMEPAGE : <b>FASHION</b></a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>NEW COMPONENTS</span></li>
+                                                        <li><a target="_blank" href="shortcode-material-design-badges.html">MATERIAL DESIGN LITE</a></li>
+                                                        
+                                                        <li><span>NEW FEATURES</span></li>
+                                                        <li><a target="_blank" href="feature-menu-12.html">NEW HEADER/MENU</a></li>
+                                                        <li><a target="_blank" href="feature-menu-dd-effects.html">MENU DROPDOWN EFFECTS</a></li>
+                                                        <li><a target="_blank" href="shortcode-carousel-2.html">OWL CAROUSEL 2</a></li>
+                                                        <li><a target="_blank" href="shortcode-thumbnails.html">IMAGE HOVER/STYLES</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-6 hidden-sm text-center">
+                                                    <div class="p-15 block">
+                                                        <img class="img-fluid" src="Content/demo_files/images/new_menu.png" alt="" />
+                                                    </div>
+                                                    <p class="menu-caption hidden-xs-down text-muted text-center">
+                                                        THE MOST COMPLETE HTML TEMPLATE
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                            </ul>
+                            
+                        </nav>
+                    </div>
                     
                 </div>
-            </div>
-            <!-- /Top Bar -->
-
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
-			<div id="header" class="navbar-toggleable-md sticky clearfix">
+            </header>
+            <!-- /Top Nav -->
             
-                <!-- SEARCH HEADER -->
-                <div class="search-box over-header">
-                    <a id="closeSearch" href="#" class="fa fa-remove"></a>
-                    
-                    <form action="page-search-result-1.html" method="get">
-                        <input type="text" class="form-control" placeholder="SEARCH" />
-                    </form>
-                </div> 
-                <!-- /SEARCH HEADER -->
-                
-                
-                <!-- TOP NAV -->
-                <header id="topNav">
-                    <div class="container">
-                        
-                        <!-- Mobile Menu Button -->
-                        <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        
-                        <!-- BUTTONS -->
-                        <ul class="float-right nav nav-pills nav-second-main">
-                            
-                            <!-- SEARCH -->
-                            <li class="search">
-                                <a href="javascript:;">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                            </li>
-                            <!-- /SEARCH -->
-                            
-                            
-                        </ul>
-                        <!-- /BUTTONS -->
-                        
-                        <!-- Logo -->
-                        <a class="logo float-left" href="index.html">
-                            <img src="Content/images/_smarty/logo_dark.png" alt="" />
-                        </a>
-                        
-                        <!-- 
-                            Top Nav 
-                            
-                            AVAILABLE CLASSES:
-                            submenu-dark = dark sub menu
-                        -->
-                        <div class="navbar-collapse collapse float-right nav-main-collapse">
-                            <nav class="nav-main">
-                                
-                                <!--
-                                    NOTE
-                                    
-                                    For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
-                                    Direct Link Example: 
-                                    
-                                    <li>
-                                        <a href="#">HOME</a>
-                                    </li>
-                                -->
-                                <ul id="topMain" class="nav nav-pills nav-main">
-                                    <li class="dropdown mega-menu"><!-- SHOP -->
-                                        <a class="dropdown-toggle" href="#">
-                                            SHOP
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <div class="row">
-                                                    
-                                                    <div class="col-md-5th">
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="shortcode-animations.html">ANIMATIONS</a></li>
-                                                            <li><a href="shortcode-buttons.html">BUTTONS</a></li>
-                                                            <li><a href="shortcode-carousel.html">CAROUSEL</a></li>
-                                                            <li><a href="shortcode-charts.html">GRAPHS</a></li>
-                                                            <li><a href="shortcode-clients.html">CLIENTS</a></li>
-                                                            <li><a href="shortcode-columns.html">GRID &amp; COLUMNS</a></li>
-                                                            <li><a href="shortcode-counters.html">COUNTERS</a></li>
-                                                            <li><a href="shortcode-forms.html">FORM ELEMENTS</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-5th">
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="shortcode-dividers.html">DIVIDERS</a></li>
-                                                            <li><a href="shortcode-icon-boxes.html">BOXES &amp; ICONS</a></li>
-                                                            <li><a href="shortcode-galleries.html">GALLERIES</a></li>
-                                                            <li><a href="shortcode-headings.html">HEADING STYLES</a></li>
-                                                            <li><a href="shortcode-icon-lists.html">ICON LISTS</a></li>
-                                                            <li><a href="shortcode-labels.html">LABELS &amp; BADGES</a></li>
-                                                            <li><a href="shortcode-lightbox.html">LIGHTBOX</a></li>
-                                                            <li><a href="shortcode-forms-editors.html">HTML EDITORS</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-5th">
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="shortcode-cards.html">Cards</a></li>
-                                                            <li><a href="shortcode-maps.html"><span class="badge badge-success float-right">new</span> MAPS</a></li>
-                                                            <li><a href="shortcode-media-embeds.html">MEDIA EMBEDS</a></li>
-                                                            <li><a href="shortcode-modals.html">MODAL / POPOVER / NOTIF</a></li>
-                                                            <li><a href="shortcode-navigations.html">NAVIGATIONS</a></li>
-                                                            <li><a href="shortcode-paginations.html">PAGINATIONS</a></li>
-                                                            <li><a href="shortcode-progress-bar.html">PROGRESS BARS</a></li>
-                                                            <li><a href="shortcode-widgets.html">WIDGETS</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-5th">
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="shortcode-pricing.html">PRICING BOXES</a></li>
-                                                            <li><a href="shortcode-process-steps.html">PROCESS STEPS</a></li>
-                                                            <li><a href="shortcode-callouts.html">CALLOUTS</a></li>
-                                                            <li><a href="shortcode-info-bars.html">INFO BARS</a></li>
-                                                            <li><a href="shortcode-blockquotes.html">BLOCKQUOTES</a></li>
-                                                            <li><a href="shortcode-responsive.html">RESPONSIVE</a></li>
-                                                            <li><a href="shortcode-sections.html">SECTIONS</a></li>
-                                                            <li><a href="shortcode-social-icons.html">SOCIAL ICONS</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-5th">
-                                                        <ul class="list-unstyled">
-                                                            <li><a href="shortcode-alerts.html">ALERTS</a></li>
-                                                            <li><a href="shortcode-styled-icons.html">STYLED ICONS</a></li>
-                                                            <li><a href="shortcode-tables.html">TABLES</a></li>
-                                                            <li><a href="shortcode-tabs.html">TABS</a></li>
-                                                            <li><a href="shortcode-testimonials.html">TESTIMONIALS</a></li>
-                                                            <li><a href="shortcode-thumbnails.html">THUMBNAILS</a></li>
-                                                            <li><a href="shortcode-toggles.html">TOGGLES</a></li>
-                                                            <li><a href="shortcode-material-design-badges.html"><span class="badge badge-danger float-right">new</span> <b>MATERIAL DESIGN</b></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><!-- ABOUT -->
-                                        <a href="about.html">ABOUT</a>
-                                    </li>
-                                    <li><!-- CONTACT -->
-                                        <a href="#">CONTACT</a>
-                                    </li>
-                                    <li><!-- FAQ -->
-                                        <a href="#">FAQ</a>
-                                    </li>
-                                    
-                                    
-                                    
-                                    
-                                    <!-- 
-                                        MENU ANIMATIONS
-                                        .nav-animate-fadeIn
-                                        .nav-animate-fadeInUp
-                                        .nav-animate-bounceIn
-                                        .nav-animate-bounceInUp
-                                        .nav-animate-flipInX
-                                        .nav-animate-flipInY
-                                        .nav-animate-zoomIn
-                                        .nav-animate-slideInUp
-                                        
-                                        .nav-hover-animate 		= animate text on hover
-                                        
-                                        .hover-animate-bounceIn = bounceIn effect on mouse over of main menu
-                                    -->
-                                    <!-- <li class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
-                                        <a class="dropdown-toggle noicon" href="#">
-                                            <span class="badge badge-danger float-right fs-11">v2</span>
-                                            <b>NEW</b>
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-menu-clean">
-                                            <li>
-                                                <div class="row">
-                                                    
-                                                    <div class="col-md-5th">
-                                                        <ul class="list-unstyled">
-                                                            <li><span>PACKS : READY TO USE</span></li>
-                                                            <li class="divider"></li>
-                                                            <li>
-                                                                <span class="fs-11 mt-0 pb-15 pt-15 text-info">NEW AND HOT: COMPLETE PACKAGES READY TO USE</span>
-                                                            </li>
-                                                            <li class="divider"></li>
-                                                            <li><a target="_blank" href="pack-realestate-home-1.html">REAL ESTATE</a></li>
-                                                            <li><a target="_blank" href="pack-megashop-home-1.html">MEGA SHOP</a></li>
-                                                            <li><a target="_blank" href="pack-hotel-home-1.html">HOTEL v1</a></li>
-                                                            <li><a target="_blank" href="pack-hotel-v2-home-1.html">HOTEL v2</a></li>
-                                                            <li><a target="_blank" href="pack-photography-home-1.html">PHOTOGRAPHY / PORTFOLIO</a></li>
-                                                            <li><a target="_blank" href="pack-caffe-home-1.html">CAFFE</a></li>
-                                                            <li><a target="_blank" href="pack-caffe-onepage.html">CAFFE - ONEPAGE</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-5th">
-                                                        <ul class="list-unstyled">
-                                                            <li><span>NEW PAGES</span></li>
-                                                            <li><a target="_blank" href="portfolio-single-project.html">PORTFOLIO SINGLE</a></li>
-                                                            <li><a target="_blank" href="page-cookie-alert.html">COOKIE ALERT</a></li>
-                                                            <li><a target="_blank" href="page-category.html">CATEGORY PAGE</a></li>
-                                                            
-                                                            <li><span>IMPROVED</span></li>
-                                                            <li><a target="_blank" href="index-thematics-hosting.html">HOMEPAGE : <b>HOSTING</b></a></li>
-                                                            <li><a target="_blank" href="index-thematics-restaurant.html">HOMEPAGE : <b>RESTAURANT</b></a></li>
-                                                            <li><a target="_blank" href="index-thematics-lawyer.html">HOMEPAGE : <b>LAWYER</b></a></li>
-                                                            <li><a target="_blank" href="index-thematics-fashion.html">HOMEPAGE : <b>FASHION</b></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-5th">
-                                                        <ul class="list-unstyled">
-                                                            <li><span>NEW COMPONENTS</span></li>
-                                                            <li><a target="_blank" href="shortcode-material-design-badges.html">MATERIAL DESIGN LITE</a></li>
-                                                            
-                                                            <li><span>NEW FEATURES</span></li>
-                                                            <li><a target="_blank" href="feature-menu-12.html">NEW HEADER/MENU</a></li>
-                                                            <li><a target="_blank" href="feature-menu-dd-effects.html">MENU DROPDOWN EFFECTS</a></li>
-                                                            <li><a target="_blank" href="shortcode-carousel-2.html">OWL CAROUSEL 2</a></li>
-                                                            <li><a target="_blank" href="shortcode-thumbnails.html">IMAGE HOVER/STYLES</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    
-                                                    <div class="col-md-6 hidden-sm text-center">
-                                                        <div class="p-15 block">
-                                                            <img class="img-fluid" src="Content/demo_files/images/new_menu.png" alt="" />
-                                                        </div>
-                                                        <p class="menu-caption hidden-xs-down text-muted text-center">
-                                                            THE MOST COMPLETE HTML TEMPLATE
-                                                        </p>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-                                </ul>
-                                
-                            </nav>
-                        </div>
-                        
-                    </div>
-                </header>
-                <!-- /Top Nav -->
-                
-            </div>
-            
-
+        </div>
+        
+        
 			<!-- 
 				PAGE HEADER 
 				
@@ -379,9 +387,6 @@
 				</div>
 			</section>
 			<!-- /PAGE HEADER -->
-
-
-
 
 			<!-- -->
 			<section>
@@ -469,15 +474,6 @@
 							<!-- short description -->
 							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<!-- /short description -->
-
-
-							<!-- countdown -->
-							<div class="text-center">
-								<h5>Limited Offer</h5>
-								<div class="countdown" data-from="January 31, 2018 15:03:26" data-labels="years,months,weeks,days,hour,min,sec"><!-- Example Date From: December 31, 2018 15:03:26 --></div>
-							</div>
-							<!-- /countdown -->
-
 
 							<hr />
 
@@ -571,36 +567,6 @@
 
 							<hr />
 
-							<!-- Share -->
-							<div class="float-right">
-
-								<a href="#" class="social-icon social-icon-sm social-icon-transparent social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-sm social-icon-transparent social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-sm social-icon-transparent social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-sm social-icon-transparent social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
-									<i class="icon-linkedin"></i>
-									<i class="icon-linkedin"></i>
-								</a>
-
-							</div>
-							<!-- /Share -->
-
-
-							<!-- rating -->
-							<div class="rating rating-4 fs-13 mt-10 fw-100"><!-- rating-0 ... rating-5 --></div>
-							<!-- /rating -->
 
 						</div>
 						<!-- /ITEM DESC -->
@@ -636,12 +602,10 @@
 
 					</div>
 
-
-
 					<ul id="myTab" class="nav nav-tabs nav-top-border mt-80" role="tablist">
 						<li class="nav-item"><a class="nav-link active" href="#description" data-toggle="tab">Description</a></li>
 						<li class="nav-item"><a class="nav-link" href="#specs" data-toggle="tab">Specifications</a></li>
-						<li class="nav-item"><a class="nav-link" href="#reviews" data-toggle="tab">Reviews (2)</a></li>
+						<!-- <li class="nav-item"><a class="nav-link" href="#reviews" data-toggle="tab">Reviews (2)</a></li> -->
 					</ul>
 
 

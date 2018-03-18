@@ -57,6 +57,9 @@
     height: 20rem;
 }
 
+.owl-carousel.hero .owl-item {
+    height: 20rem;
+}
 .owl-carousel.hero {
     background-color: #eee;
     text-align: center;
