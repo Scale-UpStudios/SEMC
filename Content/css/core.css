@@ -1,4 +1,121 @@
-/* #header a.logo img, #footer img.footer-logo {
+#header a.logo {
+    width: 100px;
     background-color: #ddd;
-    max-width: 200px;
-} */
+    color: #333;
+    text-align: center;
+}
+
+#footer .footer-logo {
+    width: 100px;
+    min-height: 50px;
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    padding-top: 14px;
+}
+
+/* Search bar */
+
+.search-container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.search-container form {
+    display: inline-flex;
+    margin: 0;
+    border: #666 solid 1px;
+}
+
+.search-container input {
+    margin: 0;
+    border: 0;
+}
+
+.search-container input:after {
+    display: block;
+	content: "\f105";
+	position: absolute;
+	top: 50%;
+	right: 17px;
+	margin: -5px 0 0;
+	font-family: FontAwesome;
+	font-size: 14px;
+	opacity: .3;
+	line-height: 1em;
+	border:0; 
+}
+
+.search-container form i {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 15px;
+}
+
+/* Banner image */
+.owl-carousel.hero {
+    height: 20rem;
+}
+
+.owl-carousel.hero {
+    background-color: #eee;
+    text-align: center;
+}
+
+/* Category menu */
+
+#category-menu,
+#category-menu.nav-pills>li {
+    display: block;
+}
+
+#category-menu.nav-pills>li>a.dropdown-toggle {
+    padding-right: 25px;
+}
+#category-menu.nav-pills>li>a.dropdown-toggle:after {
+    display: block;
+	content: "\f105";
+	position: absolute;
+	top: 50%;
+	right: 17px;
+	margin: -5px 0 0;
+	font-family: FontAwesome;
+	font-size: 14px;
+	opacity: .3;
+	line-height: 1em;
+	border:0;
+
+	-webkit-transition: -webkit-transform .2s ease-in;
+	-moz-transition: -moz-transform .2s ease-in;
+	-ms-transition: -ms-transform .2s ease-in;
+	-o-transition: -o-transform .2s ease-in;
+	transition: transform .2s ease-in;
+}
+
+/* Category menu: dropdown items */
+#category-menu li > ul.dropdown-menu {
+    top: 0 !important;
+    left: 260px;
+}
+
+#category-menu li:hover > ul.dropdown-menu {
+    padding: 0;
+    display: block !important;
+    z-index: 100!important;
+}
+
+#category-menu li ul.dropdown-menu li a:hover {
+    background-color: rgba(0,0,0,0.03);
+}
+
+#category-menu ul.dropdown-menu li a {
+    margin: 0;
+    padding: 7px 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #666;
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+}
+
