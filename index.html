@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html @Html.Partial("LanguageAttributes")>
+<head>
+    <meta charset="utf-8" />
+    <title>SEMC</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    
+    <!-- WEB FONTS : use %7C instead of | (pipe) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+    
+    <link href="Content/plugins/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
+    
+    <link href="Content/css/essentials.css"  rel="stylesheet" />
+    <link href="Content/css/layout.css"  rel="stylesheet" />
+    
+    <link href="Content/css/header-1.css"  rel="stylesheet" />
+    <link href="Content/css/layout-shop.css"  rel="stylesheet" />
+    <link href="Content/css/core.css"  rel="stylesheet" />    
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+</head>
+<body class="smoothscroll enable-animation">
+    
+    
+    <div id="wrapper">
+        
+        <!-- Top Bar -->
+        <div id="topBar" class="dark">
+            <div class="container">
+                
+                <!-- right -->
+                <ul class="top-links list-inline float-right">
+                    <li class="text-welcome hidden-xs-down">Welcome, <strong>John Doe</strong></li>
+                    <li>
+                        <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><i class="fa fa-user hidden-xs-down"></i> MY ACCOUNT</a>
+                        <ul class="dropdown-menu float-right">
+                            <li><a tabindex="-1" href="#"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#"><i class="fa fa-bookmark"></i> MY WISHLIST</a></li>
+                            <li><a tabindex="-1" href="#"><i class="fa fa-edit"></i> MY REVIEWS</a></li>
+                            <li><a tabindex="-1" href="#"><i class="fa fa-cog"></i> MY SETTINGS</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-off"></i> LOGOUT</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs-down"><a href="page-login-1.html">LOGIN</a></li>
+                    <li class="hidden-xs-down"><a href="page-register-1.html">REGISTER</a></li>
+                </ul>
+                
+                <!-- left -->
+                <ul class="top-links list-inline">
+                    <li class="hidden-xs-down"><a href="page-faq-1.html">FAQ</a></li>
+                    <li>
+                        <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">USD</a>
+                        <ul class="dropdown-langs dropdown-menu">
+                            <li><a tabindex="-1" href="#">USD</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="#">EUR</a></li>
+                            <li><a tabindex="-1" href="#">GBP</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- /Top Bar -->
+        
+        <!-- 
+            AVAILABLE HEADER CLASSES
+            
+            Default nav height: 96px
+            .header-md 		= 70px nav height
+            .header-sm 		= 60px nav height
+            
+            .b-0 		= remove bottom border (only with transparent use)
+            .transparent	= transparent header
+            .translucent	= translucent header
+            .sticky			= sticky header
+            .static			= static header
+            .dark			= dark header
+            .bottom			= header on bottom
+            
+            shadow-before-1 = shadow 1 header top
+            shadow-after-1 	= shadow 1 header bottom
+            shadow-before-2 = shadow 2 header top
+            shadow-after-2 	= shadow 2 header bottom
+            shadow-before-3 = shadow 3 header top
+            shadow-after-3 	= shadow 3 header bottom
+            
+            .clearfix		= required for mobile menu, do not remove!
+            
+            Example Usage:  class="clearfix sticky header-sm transparent b-0"
+        -->
+        <div id="header" class="navbar-toggleable-md sticky clearfix">
+            
+            <!-- SEARCH HEADER -->
+            <!-- <div class="search-box over-header">
+                <a id="closeSearch" href="#" class="fa fa-remove"></a>
+                
+                <form action="page-search-result-1.html" method="get">
+                    <input type="text" class="form-control" placeholder="SEARCH" />
+                </form>
+            </div>  -->
+            <!-- /SEARCH HEADER -->
+            
+            
+            <!-- TOP NAV -->
+            <header id="topNav">
+                <div class="container">
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    
+                    <!-- BUTTONS -->
+                    <ul class="float-right nav nav-pills nav-second-main">
+                        
+                        <!-- SEARCH -->
+                        <!-- <li class="search">
+                            <a href="javascript:;">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li> -->
+                        <!-- /SEARCH -->
+                        
+                        
+                    </ul>
+                    <!-- /BUTTONS -->
+                    
+                    <!-- Logo -->
+                    <a class="logo float-left" href="index.html">
+                        SEMC
+                        <!-- <img src="" alt="South East Market Corporation logo" /> -->
+                        <!-- <img src="Content/images/_smarty/logo_dark.png" alt="company logo" /> -->
+                    </a>
+                    
+                    <!-- 
+                        Top Nav 
+                        
+                        AVAILABLE CLASSES:
+                        submenu-dark = dark sub menu
+                    -->
+                    <div class="navbar-collapse collapse float-right nav-main-collapse">
+                        <div class="search-container float-left">
+                            <form action="search.html" method="get">
+                                <input type="text" class="form-control" placeholder="SEARCH" />
+                                <i class="fa fa-search"></i>
+                            </form>
+                        </div>
+
+                        <nav class="nav-main">
+                            
+                            <!--
+                                NOTE
+                                
+                                For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+                                Direct Link Example: 
+                                
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                            -->
+                            <ul id="topMain" class="nav nav-pills nav-main">
+                                <li class="dropdown mega-menu"><!-- SHOP -->
+                                    <a class="dropdown-toggle" href="#">
+                                        SHOP
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-animations.html">ANIMATIONS</a></li>
+                                                        <li><a href="shortcode-buttons.html">BUTTONS</a></li>
+                                                        <li><a href="shortcode-carousel.html">CAROUSEL</a></li>
+                                                        <li><a href="shortcode-charts.html">GRAPHS</a></li>
+                                                        <li><a href="shortcode-clients.html">CLIENTS</a></li>
+                                                        <li><a href="shortcode-columns.html">GRID &amp; COLUMNS</a></li>
+                                                        <li><a href="shortcode-counters.html">COUNTERS</a></li>
+                                                        <li><a href="shortcode-forms.html">FORM ELEMENTS</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-dividers.html">DIVIDERS</a></li>
+                                                        <li><a href="shortcode-icon-boxes.html">BOXES &amp; ICONS</a></li>
+                                                        <li><a href="shortcode-galleries.html">GALLERIES</a></li>
+                                                        <li><a href="shortcode-headings.html">HEADING STYLES</a></li>
+                                                        <li><a href="shortcode-icon-lists.html">ICON LISTS</a></li>
+                                                        <li><a href="shortcode-labels.html">LABELS &amp; BADGES</a></li>
+                                                        <li><a href="shortcode-lightbox.html">LIGHTBOX</a></li>
+                                                        <li><a href="shortcode-forms-editors.html">HTML EDITORS</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-cards.html">Cards</a></li>
+                                                        <li><a href="shortcode-maps.html"><span class="badge badge-success float-right">new</span> MAPS</a></li>
+                                                        <li><a href="shortcode-media-embeds.html">MEDIA EMBEDS</a></li>
+                                                        <li><a href="shortcode-modals.html">MODAL / POPOVER / NOTIF</a></li>
+                                                        <li><a href="shortcode-navigations.html">NAVIGATIONS</a></li>
+                                                        <li><a href="shortcode-paginations.html">PAGINATIONS</a></li>
+                                                        <li><a href="shortcode-progress-bar.html">PROGRESS BARS</a></li>
+                                                        <li><a href="shortcode-widgets.html">WIDGETS</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-pricing.html">PRICING BOXES</a></li>
+                                                        <li><a href="shortcode-process-steps.html">PROCESS STEPS</a></li>
+                                                        <li><a href="shortcode-callouts.html">CALLOUTS</a></li>
+                                                        <li><a href="shortcode-info-bars.html">INFO BARS</a></li>
+                                                        <li><a href="shortcode-blockquotes.html">BLOCKQUOTES</a></li>
+                                                        <li><a href="shortcode-responsive.html">RESPONSIVE</a></li>
+                                                        <li><a href="shortcode-sections.html">SECTIONS</a></li>
+                                                        <li><a href="shortcode-social-icons.html">SOCIAL ICONS</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="shortcode-alerts.html">ALERTS</a></li>
+                                                        <li><a href="shortcode-styled-icons.html">STYLED ICONS</a></li>
+                                                        <li><a href="shortcode-tables.html">TABLES</a></li>
+                                                        <li><a href="shortcode-tabs.html">TABS</a></li>
+                                                        <li><a href="shortcode-testimonials.html">TESTIMONIALS</a></li>
+                                                        <li><a href="shortcode-thumbnails.html">THUMBNAILS</a></li>
+                                                        <li><a href="shortcode-toggles.html">TOGGLES</a></li>
+                                                        <li><a href="shortcode-material-design-badges.html"><span class="badge badge-danger float-right">new</span> <b>MATERIAL DESIGN</b></a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><!-- ABOUT -->
+                                    <a href="about.html">ABOUT</a>
+                                </li>
+                                <li><!-- CONTACT -->
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li><!-- FAQ -->
+                                    <a href="#">FAQ</a>
+                                </li>
+                                
+                                
+                                
+                                
+                                <!-- 
+                                    MENU ANIMATIONS
+                                    .nav-animate-fadeIn
+                                    .nav-animate-fadeInUp
+                                    .nav-animate-bounceIn
+                                    .nav-animate-bounceInUp
+                                    .nav-animate-flipInX
+                                    .nav-animate-flipInY
+                                    .nav-animate-zoomIn
+                                    .nav-animate-slideInUp
+                                    
+                                    .nav-hover-animate 		= animate text on hover
+                                    
+                                    .hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+                                -->
+                                <!-- <li class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+                                    <a class="dropdown-toggle noicon" href="#">
+                                        <span class="badge badge-danger float-right fs-11">v2</span>
+                                        <b>NEW</b>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-clean">
+                                        <li>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>PACKS : READY TO USE</span></li>
+                                                        <li class="divider"></li>
+                                                        <li>
+                                                            <span class="fs-11 mt-0 pb-15 pt-15 text-info">NEW AND HOT: COMPLETE PACKAGES READY TO USE</span>
+                                                        </li>
+                                                        <li class="divider"></li>
+                                                        <li><a target="_blank" href="pack-realestate-home-1.html">REAL ESTATE</a></li>
+                                                        <li><a target="_blank" href="pack-megashop-home-1.html">MEGA SHOP</a></li>
+                                                        <li><a target="_blank" href="pack-hotel-home-1.html">HOTEL v1</a></li>
+                                                        <li><a target="_blank" href="pack-hotel-v2-home-1.html">HOTEL v2</a></li>
+                                                        <li><a target="_blank" href="pack-photography-home-1.html">PHOTOGRAPHY / PORTFOLIO</a></li>
+                                                        <li><a target="_blank" href="pack-caffe-home-1.html">CAFFE</a></li>
+                                                        <li><a target="_blank" href="pack-caffe-onepage.html">CAFFE - ONEPAGE</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>NEW PAGES</span></li>
+                                                        <li><a target="_blank" href="portfolio-single-project.html">PORTFOLIO SINGLE</a></li>
+                                                        <li><a target="_blank" href="page-cookie-alert.html">COOKIE ALERT</a></li>
+                                                        <li><a target="_blank" href="page-category.html">CATEGORY PAGE</a></li>
+                                                        
+                                                        <li><span>IMPROVED</span></li>
+                                                        <li><a target="_blank" href="index-thematics-hosting.html">HOMEPAGE : <b>HOSTING</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-restaurant.html">HOMEPAGE : <b>RESTAURANT</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-lawyer.html">HOMEPAGE : <b>LAWYER</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-fashion.html">HOMEPAGE : <b>FASHION</b></a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>NEW COMPONENTS</span></li>
+                                                        <li><a target="_blank" href="shortcode-material-design-badges.html">MATERIAL DESIGN LITE</a></li>
+                                                        
+                                                        <li><span>NEW FEATURES</span></li>
+                                                        <li><a target="_blank" href="feature-menu-12.html">NEW HEADER/MENU</a></li>
+                                                        <li><a target="_blank" href="feature-menu-dd-effects.html">MENU DROPDOWN EFFECTS</a></li>
+                                                        <li><a target="_blank" href="shortcode-carousel-2.html">OWL CAROUSEL 2</a></li>
+                                                        <li><a target="_blank" href="shortcode-thumbnails.html">IMAGE HOVER/STYLES</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-6 hidden-sm text-center">
+                                                    <div class="p-15 block">
+                                                        <img class="img-fluid" src="Content/demo_files/images/new_menu.png" alt="" />
+                                                    </div>
+                                                    <p class="menu-caption hidden-xs-down text-muted text-center">
+                                                        THE MOST COMPLETE HTML TEMPLATE
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                            </ul>
+                            
+                        </nav>
+                    </div>
+                    
+                </div>
+            </header>
+            <!-- /Top Nav -->
+            
+        </div>
+        
+        
+        <!-- SLIDER -->
+		<section class="pt-40">
+			<div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4 menu ">
+                        <ul id="category-menu" class="nav nav-pills nav-second-main">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">CATEGORY ITEM</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">CATEGORY ITEM</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">CATEGORY ITEM</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">CATEGORY ITEM</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">CATEGORY ITEM</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">CATEGORY ITEM</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">CATEGORY ITEM</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-lg-9 col-sm-8">
+                        
+                        <!-- OWL SLIDER -->
+                        <div class="owl-carousel buttons-autohide controlls-over m-0 hero" data-plugin-options='{"items": 1, "autoHeight": false, "navigation": true, "pagination": false, "transitionStyle":"fade", "progressBar":"false"}'>
+
+                                <!-- <div>
+                                    <img class="img-fluid" src="Content/demo_files/images/shop/banners/home_slider_2.jpg" alt="">
+                                </div> -->
+                                <a href="#">
+                                    banner image
+                                    <!-- <img class="img-fluid" src="Content/demo_files/images/shop/banners/home_slider_1.jpg" alt=""> -->
+                                </a>
+                            </div>
+                            <!-- /OWL SLIDER -->
+                            </div>
+                        </div>
+                
+				
+			</div>
+		</section>
+		<!-- /SLIDER -->
+        
+        <!-- INFO BAR 
+            inside .container
+        -->
+        <div class="info-bar">
+            <div class="container">
+        
+                <div class="row">
+        
+                    <div class="col-sm-4">
+                        <i class="glyphicon glyphicon-globe"></i>
+                        <h3>FREE SHIPPING &amp; RETURN</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+        
+                    <div class="col-sm-4">
+                        <i class="glyphicon glyphicon-usd"></i>
+                        <h3>MONEY BACK GUARANTEE</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+        
+                    <div class="col-sm-4">
+                        <i class="glyphicon glyphicon-flag"></i>
+                        <h3>ONLINE SUPPORT 24/7</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+        
+                </div>
+        
+            </div>
+        </div>
+        <!-- /INFO BAR -->
+
+        <!-- FEATURED -->
+        <section>
+            <div class="container">
+                
+                <h2 class="owl-featured b-0"><strong>FEATURED</strong> PRODUCTS</h2>
+                <div class="owl-carousel featured m-0 owl-padding-10" data-plugin-options='{"singleItem": false, "items": "4", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": true, "pagination": false}'>
+                    
+                    <!-- item -->
+                    <div class="shop-item m-0">
+                        
+                        <div class="thumbnail">
+                            <!-- product image(s) -->
+                            <a class="shop-item-image" href="product.html">
+                                <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                            </a>
+                            <!-- /product image(s) -->
+                            
+                        </div>
+                        
+                        <div class="shop-item-summary text-center">
+                            <h2>Throttle body</h2>
+                   
+                            <!-- price -->
+                            <div class="shop-item-price">
+                                <span class="line-through">$98.00</span>
+                                $78.00
+                            </div>
+                            <!-- /price -->
+                        </div>
+                        
+                        <!-- buttons -->
+                        <div class="shop-item-buttons text-center">
+                            <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                        <!-- /buttons -->
+                    </div>
+                    <!-- /item -->
+                    
+                    <!-- item -->
+                    <div class="shop-item m-0">
+                        
+                        <div class="thumbnail">
+                            <!-- product image(s) -->
+                            <a class="shop-item-image" href="product.html">
+                                <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                            </a>
+                            <!-- /product image(s) -->
+                        </div>
+                        
+                        <div class="shop-item-summary text-center">
+                            <h2>Throttle body</h2>
+                      
+                            <!-- price -->
+                            <div class="shop-item-price">
+                                $44.00
+                            </div>
+                            <!-- /price -->
+                        </div>
+                        
+                        <!-- buttons -->
+                        <div class="shop-item-buttons text-center">
+                            <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                        <!-- /buttons -->
+                    </div>
+                    <!-- /item -->
+                    
+                    <!-- item -->
+                    <div class="shop-item m-0">
+                        
+                        <div class="thumbnail">
+                            <!-- product image(s) -->
+                            <a class="shop-item-image" href="product.html">
+                                <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                            </a>
+                            <!-- /product image(s) -->
+                            
+                        </div>
+                        
+                        <div class="shop-item-summary text-center">
+                            <h2>Throttle body</h2>
+                  
+                            <!-- price -->
+                            <div class="shop-item-price">
+                                <span class="line-through">$77.00</span>
+                                $65.00
+                            </div>
+                            <!-- /price -->
+                        </div>
+                        
+                        <!-- buttons -->
+                        <div class="shop-item-buttons text-center">
+                            <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                        <!-- /buttons -->
+                    </div>
+                    <!-- /item -->
+                    
+                    <!-- item -->
+                    <div class="shop-item m-0">
+                        
+                        <div class="thumbnail">
+                            <!-- product image(s) -->
+                            <a class="shop-item-image" href="product.html">
+                                <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                            </a>
+                            <!-- /product image(s) -->
+                        </div>
+                        
+                        <div class="shop-item-summary text-center">
+                            <h2>Throttle body</h2>
+                                                        
+                            <!-- price -->
+                            <div class="shop-item-price">
+                                $56.00
+                            </div>
+                            <!-- /price -->
+                        </div>
+                        
+                        <!-- buttons -->
+                        <div class="shop-item-buttons text-center">
+                            <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                        <!-- /buttons -->
+                    </div>
+                    <!-- /item -->
+                    
+                    <!-- item -->
+                    <div class="shop-item m-0">
+                        
+                        <div class="thumbnail">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                        </div>
+                        
+                        <div class="shop-item-summary text-center">
+                            <h2>Throttle body</h2>
+                            
+                            <!-- price -->
+                            <div class="shop-item-price">
+                                $154.00
+                            </div>
+                            <!-- /price -->
+                        </div>
+                        
+                        <!-- buttons -->
+                        <div class="shop-item-buttons text-center">
+                            <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                        <!-- /buttons -->
+                    </div>
+                    <!-- /item -->
+                    
+                    <!-- item -->
+                    <div class="shop-item m-0">
+                        
+                        <div class="thumbnail">
+                            <!-- product image(s) -->
+                            <a class="shop-item-image" href="product.html">
+                                <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                            </a>
+                            <!-- /product image(s) -->
+                        </div>
+                        
+                        <div class="shop-item-summary text-center">
+                            <h2>Throttle body</h2>                           
+                            
+                            <!-- price -->
+                            <div class="shop-item-price">
+                                $167.00
+                            </div>
+                            <!-- /price -->
+                        </div>
+                        
+                        <!-- buttons -->
+                        <div class="shop-item-buttons text-center">
+                            <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                        <!-- /buttons -->
+                    </div>
+                    <!-- /item -->
+                </div>
+                
+            </div>
+        </section>
+        <!-- /FEATURED -->
+        
+        <!-- NEW PRODUCTS -->
+        <section>
+            <div class="container">
+                
+                <div class="heading-title">
+                    <h2 class="fs-20">NEW PRODUCTS</h2>
+                </div>
+                
+                <ul class="shop-item-list row list-inline m-0">
+                    
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+                    
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+                    
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+                    
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+
+                    <!-- ITEM -->
+                    <li class="col-lg-2 col-sm-4">
+                        
+                        <div class="shop-item">
+                            
+                            <div class="thumbnail b-0 p-0">
+                                <!-- product image(s) -->
+                                <a class="shop-item-image" href="product.html">
+                                    <img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
+                                    <img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
+                                </a>
+                                <!-- /product image(s) -->
+                                
+                                <!-- hover buttons -->
+                                <div class="shop-option-over">
+                                    <a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus fs-18"></i></a>
+                                </div>
+                                <!-- /hover buttons -->
+                                
+                            </div>
+                            
+                            <div class="shop-item-summary text-center">
+                                <h2 class="fs-14">Throttle body</h2>
+                                
+                                <!-- price -->
+                                <div class="shop-item-price">
+                                    <span class="line-through">$98.00</span>
+                                    $78.00
+                                </div>
+                                <!-- /price -->
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                    <!-- /ITEM -->
+                    
+                </ul>
+                
+            </div>
+        </section>
+        <!-- NEW PRODUCTS -->
+        
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container">
+                
+                <div class="row mt-60 mb-40 fs-13">
+                    
+                    <!-- col #1 -->
+                    <div class="col-md-4 col-sm-4">
+                        
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            SEMC logo
+                        </div>
+                        <!-- <img class="footer-logo" src="" alt="South East Market Corporation logo" /> -->
+                        
+                        <p>
+                            © 2018 South East Market Corporation. All rights reserved.
+                        </p>
+                        
+                        <h2>(800) 123-4567</h2>
+                        
+                        <!-- Social Icons -->
+                        <div class="clearfix">
+                            
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                            
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+                            
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+                                <i class="icon-gplus"></i>
+                                <i class="icon-gplus"></i>
+                            </a>
+                            
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                            
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
+                                <i class="icon-rss"></i>
+                                <i class="icon-rss"></i>
+                            </a>
+                            
+                        </div>
+                        <!-- /Social Icons -->
+                        
+                    </div>
+                    <!-- /col #1 -->
+                    
+                    <!-- col #2 -->
+                    <div class="col-md-8 col-sm-8">
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-4 hidden-sm hidden-xs-down">
+                                <h4 class="letter-spacing-1">COMPANY INFO</h4>
+                                <ul class="list-unstyled footer-list half-paddings b-0">
+                                    <li><a class="block" href="#"><i class="fa fa-angle-right"></i> About Us</a></li>
+                                    <li><a class="block" href="#"><i class="fa fa-angle-right"></i> Contact Us</a></li>
+                                    <li><a class="block" href="#"><i class="fa fa-angle-right"></i> FAQ</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-4 hidden-sm hidden-xs-down">
+                                <h4 class="letter-spacing-1">CUSTOMER CARE</h4>
+                                <ul class="list-unstyled footer-list half-paddings b-0">
+                                    <li><a class="block" href="#"><i class="fa fa-angle-right"></i> Payment</a></li>
+                                    <li><a class="block" href="#"><i class="fa fa-angle-right"></i> How to Buy</a></li>
+                                    <li><a class="block" href="#"><i class="fa fa-angle-right"></i> Shipping & Delivery</a></li>
+                                    <li><a class="block" href="#"><i class="fa fa-angle-right"></i> How to Return</a></li>
+                                    <li><a class="block" href="#"><i class="fa fa-angle-right"></i> Questions</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <h4 class="letter-spacing-1">SECURE PAYMENT</h4>
+                                <p>Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet.</p>
+                                <p>	<!-- see Content/images/_smarty/cc/ for more icons -->
+                                    <img src="Content/images/_smarty/cc/Visa.png" alt="" />
+                                    <img src="Content/images/_smarty/cc/Mastercard.png" alt="" />
+                                    <img src="Content/images/_smarty/cc/Maestro.png" alt="" />
+                                    <img src="Content/images/_smarty/cc/PayPal.png" alt="" />
+                                </p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- /col #2 -->
+                    
+                </div>
+                
+            </div>
+            
+            <div class="copyright">
+                <div class="container">
+                    <ul class="float-right m-0 list-inline mobile-block">
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li>&bull;</li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                    
+                    &copy; 2018 South East Market Corporation. All rights reserved.
+                </div>
+            </div>
+            
+        </footer>
+        <!-- /FOOTER -->
+        
+        
+        
+        <!-- 
+            HOME SHOP - MODAL ON LOAD 
+            
+            data-autoload="true" 			- load modal on page load
+            data-autoload-delay="2000"		- load after 2000 ms (1000ms = 1s)
+        -->
+        <div id="shopLoadModal" class="modal fade" data-autoload="true" data-autoload-delay="2000">
+            <div class="modal-dialog modal-full">
+                <div class="modal-content" style="background-image:url('Content/images/_smarty/misc/shop/shop_modal.jpg');">
+                    
+                    <!-- header modal -->
+                    <div class="modal-header b-0">
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    
+                    <!-- body modal -->
+                    <div class="modal-body">
+                        
+                        <div class="block-content">
+                            
+                            <img src="Content/images/_smarty/logo-footer-dark.png" alt="" />
+                            <p class="fs-13 mb-20 mt-30">Subscribe to the Smarty newsletter to get all new products and all new discounts.</p>
+                            
+                            <!-- newsletter -->
+                            <div class="inline-search clearfix mb-20">
+                                <form action="php/newsletter.php" method="post" class="validate m-0" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right" novalidate="novalidate">
+                                    
+                                    <input type="search" placeholder="Email Address" id="shop_email" name="shop_email" class="serch-input required">
+                                    <button type="submit">
+                                        <i class="fa fa-check"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- /newsletter -->
+                            
+                            <!-- Don't show this popup again -->
+                            <div class="fs-11 text-left">
+                                <label class="checkbox float-left">
+                                    <input class="loadModalHide" type="checkbox" />
+                                    <i></i> <span class="fw-300">Don't show this popup again</span>
+                                </label>
+                                
+                            </div>
+                            <!-- /Don't show this popup again -->
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /HOME SHOP - MODAL ON LOAD -->
+        
+    </div>
+	<!-- /wrapper -->
+    
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+    
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="inner">
+            <span class="loader"></span>
+        </div>
+    </div><!-- /PRELOADER -->
+    
+    
+    <!-- footer css -->
+    <!-- footer scripts -->  
+    
+    <script type="text/javascript">var plugin_path = 'Content/plugins/';</script>
+    <script src="Content/plugins/jquery/jquery-3.2.1.min.js" type="application/javascript"></script>
+    
+    <script src="Content/js/scripts.js"></script>
+</body>
+</html>
