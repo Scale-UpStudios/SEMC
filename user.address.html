@@ -42,7 +42,7 @@
                     <li>
                         <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><i class="fa fa-user hidden-xs-down"></i> MY ACCOUNT</a>
                         <ul class="dropdown-menu float-right">
-                            <li><a tabindex="-1" href="#"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
+                            <li><a tabindex="-1" href="user.history.html"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
                             <li class="divider"></li>
                             <li><a tabindex="-1" href="#"><i class="fa fa-bookmark"></i> MY WISHLIST</a></li>
                             <li><a tabindex="-1" href="#"><i class="fa fa-edit"></i> MY REVIEWS</a></li>
@@ -101,6 +101,17 @@
         -->
         <div id="header" class="navbar-toggleable-md sticky clearfix">
             
+            <!-- SEARCH HEADER -->
+            <!-- <div class="search-box over-header">
+                <a id="closeSearch" href="#" class="fa fa-remove"></a>
+                
+                <form action="page-search-result-1.html" method="get">
+                    <input type="text" class="form-control" placeholder="SEARCH" />
+                </form>
+            </div>  -->
+            <!-- /SEARCH HEADER -->
+            
+            
             <!-- TOP NAV -->
             <header id="topNav">
                 <div class="container">
@@ -112,6 +123,15 @@
                     
                     <!-- BUTTONS -->
                     <ul class="float-right nav nav-pills nav-second-main">
+                        
+                        <!-- SEARCH -->
+                        <!-- <li class="search">
+                            <a href="javascript:;">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li> -->
+                        <!-- /SEARCH -->
+                        
                         
                     </ul>
                     <!-- /BUTTONS -->
@@ -236,16 +256,104 @@
                                 <li><!-- FAQ -->
                                     <a href="#">FAQ</a>
                                 </li>
+                                
+                                
+                                
+                                
+                                <!-- 
+                                    MENU ANIMATIONS
+                                    .nav-animate-fadeIn
+                                    .nav-animate-fadeInUp
+                                    .nav-animate-bounceIn
+                                    .nav-animate-bounceInUp
+                                    .nav-animate-flipInX
+                                    .nav-animate-flipInY
+                                    .nav-animate-zoomIn
+                                    .nav-animate-slideInUp
+                                    
+                                    .nav-hover-animate 		= animate text on hover
+                                    
+                                    .hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+                                -->
+                                <!-- <li class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+                                    <a class="dropdown-toggle noicon" href="#">
+                                        <span class="badge badge-danger float-right fs-11">v2</span>
+                                        <b>NEW</b>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-clean">
+                                        <li>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>PACKS : READY TO USE</span></li>
+                                                        <li class="divider"></li>
+                                                        <li>
+                                                            <span class="fs-11 mt-0 pb-15 pt-15 text-info">NEW AND HOT: COMPLETE PACKAGES READY TO USE</span>
+                                                        </li>
+                                                        <li class="divider"></li>
+                                                        <li><a target="_blank" href="pack-realestate-home-1.html">REAL ESTATE</a></li>
+                                                        <li><a target="_blank" href="pack-megashop-home-1.html">MEGA SHOP</a></li>
+                                                        <li><a target="_blank" href="pack-hotel-home-1.html">HOTEL v1</a></li>
+                                                        <li><a target="_blank" href="pack-hotel-v2-home-1.html">HOTEL v2</a></li>
+                                                        <li><a target="_blank" href="pack-photography-home-1.html">PHOTOGRAPHY / PORTFOLIO</a></li>
+                                                        <li><a target="_blank" href="pack-caffe-home-1.html">CAFFE</a></li>
+                                                        <li><a target="_blank" href="pack-caffe-onepage.html">CAFFE - ONEPAGE</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>NEW PAGES</span></li>
+                                                        <li><a target="_blank" href="portfolio-single-project.html">PORTFOLIO SINGLE</a></li>
+                                                        <li><a target="_blank" href="page-cookie-alert.html">COOKIE ALERT</a></li>
+                                                        <li><a target="_blank" href="page-category.html">CATEGORY PAGE</a></li>
+                                                        
+                                                        <li><span>IMPROVED</span></li>
+                                                        <li><a target="_blank" href="index-thematics-hosting.html">HOMEPAGE : <b>HOSTING</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-restaurant.html">HOMEPAGE : <b>RESTAURANT</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-lawyer.html">HOMEPAGE : <b>LAWYER</b></a></li>
+                                                        <li><a target="_blank" href="index-thematics-fashion.html">HOMEPAGE : <b>FASHION</b></a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>NEW COMPONENTS</span></li>
+                                                        <li><a target="_blank" href="shortcode-material-design-badges.html">MATERIAL DESIGN LITE</a></li>
+                                                        
+                                                        <li><span>NEW FEATURES</span></li>
+                                                        <li><a target="_blank" href="feature-menu-12.html">NEW HEADER/MENU</a></li>
+                                                        <li><a target="_blank" href="feature-menu-dd-effects.html">MENU DROPDOWN EFFECTS</a></li>
+                                                        <li><a target="_blank" href="shortcode-carousel-2.html">OWL CAROUSEL 2</a></li>
+                                                        <li><a target="_blank" href="shortcode-thumbnails.html">IMAGE HOVER/STYLES</a></li>
+                                                    </ul>
+                                                </div>
+                                                
+                                                <div class="col-md-6 hidden-sm text-center">
+                                                    <div class="p-15 block">
+                                                        <img class="img-fluid" src="Content/demo_files/images/new_menu.png" alt="" />
+                                                    </div>
+                                                    <p class="menu-caption hidden-xs-down text-muted text-center">
+                                                        THE MOST COMPLETE HTML TEMPLATE
+                                                    </p>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li> -->
                             </ul>
+                            
                         </nav>
                     </div>
+                    
                 </div>
             </header>
             <!-- /Top Nav -->
             
         </div>
         
-
         <!-- 
 				PAGE HEADER 
 				
@@ -266,638 +374,103 @@
 			<section class="page-header page-header-xs">
 				<div class="container">
 
-					<h1>SEARCH RESULTS</h1>
+					<!-- breadcrumbs -->
+					<ol class="breadcrumb breadcrumb-inverse">
+						<li><a href="#">Home</a></li>
+						<li class="active">Felicia Doe</li>
+					</ol><!-- /breadcrumbs -->
 
 				</div>
 			</section>
 			<!-- /PAGE HEADER -->
-        
-            <!-- -->
+
+
+
+
+			<!-- -->
 			<section>
 				<div class="container">
-					
-					<div class="row">
+				<div class="row">
 
 						<!-- RIGHT -->
-						<div class="col-lg-9 col-md-9 col-sm-9 push-lg-3 push-md-3 push-sm-3">
+						<div class="col-lg-9 col-md-9 col-sm-8 push-lg-3 push-md-3 push-sm-4 mb-80">
                             
-							<!-- LIST OPTIONS -->
-							<div class="clearfix shop-list-options mb-20">
-
-								<ul class="pagination m-0 float-right">
-									<li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-									<li class="page-item active"><a class="page-link" href="#">1</a></li>
-									<li class="page-item"><a class="page-link" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" href="#">3</a></li>
-									<li class="page-item"><a class="page-link" href="#">4</a></li>
-									<li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-								</ul>
-
-								<div class="options-left">
-									<select>
-										<option value="pos_asc">Position ASC</option>
-										<option value="pos_desc">Position DESC</option>
-										<option value="name_asc">Name ASC</option>
-										<option value="name_desc">Name DESC</option>
-										<option value="price_asc">Price ASC</option>
-										<option value="price_desc">Price DESC</option>
-									</select>
-									
-									<a class="btn active fa fa-th" href="shop-4col-left.html"><!-- grid --></a>
-									<a class="btn fa fa-list" href="shop-1col-left.html"><!-- list --></a>
+                            <!-- PERSONAL INFO TAB -->
+								<div class="tab-pane active" id="info">
+									<form action="#" method="post">
+										<div class="form-group">
+											<label class="form-control-label">Address Line 1</label>
+											<input type="text" placeholder="Building number, street name" class="form-control">
+										</div>
+										<div class="form-group">
+											<label class="form-control-label">Address Line 2</label>
+											<input type="text" placeholder="District, city" class="form-control">
+										</div>
+										<!-- <div class="form-group">
+											<label class="form-control-label">Mobile Number</label>
+											<input type="text" placeholder="+1800-1234-657" class="form-control">
+										</div>
+										<div class="form-group">
+											<label class="form-control-label">Interests</label>
+											<input type="text" placeholder="Development, C++, etc." class="form-control">
+										</div>
+										<div class="form-group">
+											<label class="form-control-label">Occupation</label>
+											<input type="text" placeholder="Webdeveloper" class="form-control">
+										</div>
+										<div class="form-group">
+											<label class="form-control-label">About</label>
+											<textarea class="form-control" rows="3" placeholder="About Me..."></textarea>
+										</div>
+										<div class="form-group">
+											<label class="form-control-label">Website Url</label>
+											<input type="text" placeholder="http://www.yourwebsite.com" class="form-control">
+										</div> -->
+										<div class="margiv-top10">
+											<a href="#" class="btn btn-primary"><i class="fa fa-check"></i> Add new address </a>
+											<!-- <a href="#" class="btn btn-default">Cancel </a> -->
+										</div>
+									</form>
 								</div>
-
-							</div>
-							<!-- /LIST OPTIONS -->
-
-
-							<ul class="shop-item-list row list-inline m-0">
-
-								<!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop hover image" />
-											</a>
-                                            <!-- /product image(s) -->
-                                            
-											<!-- product more info -->
-											<div class="shop-item-info">
-												<span class="badge badge-success">NEW</span>
-												<span class="badge badge-danger">SALE</span>
-											</div>
-											<!-- /product more info -->
-										</div>
-										
-										<div class="shop-item-summary text-center">
-											<h2>Throttle body</h2>
-											
-    											<!-- price -->
-											<div class="shop-item-price">
-												<span class="line-through">$98.00</span>
-												$78.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-								<!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop hover image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-											<h2>Throttle body</h2>											
-											
-											<!-- price -->
-											<div class="shop-item-price">
-												$128.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<span class="out-of-stock">out of stock</span><!-- add .clean to remove css characteres -->
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-								<!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-											<h2>Throttle body</h2>
-											
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-                                <!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-											<h2>Throttle body</h2>
-											
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-                                
-                                <!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-											<h2>Throttle body</h2>
-											
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-                                
-                                <!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-											<h2>Throttle body</h2>
-											
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-								<!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-											<h2>Throttle body</h2>
-
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-
-								<!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-											<h2>Throttle body</h2>
-											
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-                                <!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-                                            <h2>Throttle body</h2>
-
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-								<!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-                                            <h2>Throttle body</h2>
-
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-								<!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-                                            <h2>Throttle body</h2>
-
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-								<!-- ITEM -->
-								<li class="col-lg-3 col-sm-3">
-
-									<div class="shop-item">
-
-										<div class="thumbnail">
-											<!-- product image(s) -->
-											<a class="shop-item-image" href="product.html">
-												<img class="img-fluid" src="Content/images/throttlebody-1.jpg" alt="shop first image" />
-												<img class="img-fluid" src="Content/images/throttlebody-2.jpg" alt="shop first image" />
-											</a>
-											<!-- /product image(s) -->
-
-										</div>
-										
-										<div class="shop-item-summary text-center">
-                                            <h2>Throttle body</h2>
-
-											<!-- price -->
-											<div class="shop-item-price">
-												$34.00
-											</div>
-											<!-- /price -->
-										</div>
-
-											<!-- buttons -->
-											<div class="shop-item-buttons text-center">
-												<a class="btn btn-default" href="shop-cart.html"><i class="fa fa-cart-plus"></i> Add to Cart</a>
-											</div>
-											<!-- /buttons -->
-									</div>
-
-								</li>
-								<!-- /ITEM -->
-
-							</ul>
-
-							<hr />
-
-							<!-- Pagination Default -->
-							<div class="text-center">
-								<ul class="pagination">
-									<li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-									<li class="page-item active"><a class="page-link" href="#">1</a></li>
-									<li class="page-item"><a class="page-link" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" href="#">3</a></li>
-									<li class="page-item"><a class="page-link" href="#">4</a></li>
-									<li class="page-item"><a class="page-link" href="#">5</a></li>
-									<li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-								</ul>
-							</div>
-							<!-- /Pagination Default -->
+								<!-- /PERSONAL INFO TAB -->
 
 						</div>
 
-
+						
 						<!-- LEFT -->
-						<div class="col-lg-3 col-md-3 col-sm-3 pull-lg-9 pull-md-9 pull-sm-9">
+						<div class="col-lg-3 col-md-3 col-sm-4 pull-lg-9 pull-md-9 pull-sm-8">
+						
+							<!-- <div class="thumbnail text-center">
+								<img class="img-fluid" src="demo_files/images/people/460x700/8-min.jpg" alt="" />
+								<h2 class="fs-18 mt-10 mb-0">Felica Doe</h2>
+								<h3 class="fs-11 mt-0 mb-10 text-muted">DEVELOPER</h3>
+							</div> -->
 
-							<!-- CATEGORIES -->
-							<div class="side-nav mb-60">
-
-								<div class="side-nav-head">
-									<button class="fa fa-bars"></button>
-									<h4>CATEGORIES</h4>
+							<!-- completed -->
+							<!-- <div class="mb-30">
+								<label>88% completed profile</label>
+								<div class="progress progress-xxs">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%; min-width: 2em;"></div>
 								</div>
+							</div> -->
+							<!-- /completed -->
 
-								<ul class="list-group list-group-bordered list-group-noicon uppercase">
-									<li class="list-group-item active">
-										<a class="dropdown-toggle" href="#">Category 1</a>
-										<ul>
-											<li><a href="#"><span class="fs-11 text-muted float-right">(123)</span> Parts &amp; Accessories</a></li>
-											<li class="active"><a href="#"><span class="fs-11 text-muted float-right">(331)</span> Parts &amp; Accessories</a></li>
-										</ul>
-									</li>
-									<li class="list-group-item">
-										<a class="dropdown-toggle" href="#">Category 2</a>
-										<ul>
-											<li><a href="#"><span class="fs-11 text-muted float-right">(123)</span> Parts &amp; Accessories</a></li>
-											<li class="active"><a href="#"><span class="fs-11 text-muted float-right">(331)</span> Parts &amp; Accessories</a></li>
-										</ul>
-									</li>
-									<li class="list-group-item">
-										<a class="dropdown-toggle" href="#">Category 3</a>
-										<ul>
-											<li><a href="#"><span class="fs-11 text-muted float-right">(123)</span> Parts &amp; Accessories</a></li>
-											<li class="active"><a href="#"><span class="fs-11 text-muted float-right">(331)</span> Parts &amp; Accessories</a></li>
-										</ul>
-									</li>
-									<li class="list-group-item">
-										<a class="dropdown-toggle" href="#">Category 4</a>
-										<ul>
-											<li><a href="#"><span class="fs-11 text-muted float-right">(123)</span> Parts &amp; Accessories</a></li>
-											<li class="active"><a href="#"><span class="fs-11 text-muted float-right">(331)</span> Parts &amp; Accessories</a></li>
-										</ul>
-									</li>
-								</ul>
-
-							</div>
-							<!-- /CATEGORIES -->
-
-							<!-- SIZE -->
-							<div class="mb-60">
-								<h4>SIZE</h4>
-
-								<a class="tag" href="#">
-									<span class="txt">S</span>
-								</a>
-								<a class="tag" href="#">
-									<span class="txt bold">M</span>
-								</a>
-								<a class="tag" href="#">
-									<span class="txt">L</span>
-								</a>
-								<a class="tag" href="#">
-									<span class="txt">XL</span>
-								</a>
-								<a class="tag" href="#">
-									<span class="txt">2XL</span>
-								</a>
-								<a class="tag" href="#">
-									<span class="txt">3XL</span>
-								</a>
-								
-								<hr />
-
-								<div class="clearfix fs-12">
-									<a class="float-right fa fa-remove" href="#"></a>
-									SELECTED SIZE: <strong>M</strong>
-								</div>
-							</div>
-							<!-- /SIZE -->
+							<!-- SIDE NAV -->
+							<ul class="side-nav list-group mb-60" id="sidebar-nav">
+								<li class="list-group-item"><a href="user.profile.html"><i class="fa fa-eye"></i> PROFILE</a></li>
+								<!-- <li class="list-group-item"><a href="page-profile-projects.html"><i class="fa fa-tasks"></i> PROJECTS</a></li> -->
+								<!-- <li class="list-group-item"><a href="page-profile-comments.html"><i class="fa fa-comments-o"></i> COMMENTS</a></li> -->
+								<li class="list-group-item"><a href="user.history.html"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
+								<li class="list-group-item active"><a href="user.address.html"><i class="fa fa-gears"></i> ADDRESSES</a></li>
+							</ul>
+							<!-- /SIDE NAV -->
 
 
-							<!-- COLOR -->
-							<div class="mb-60">
-								<h4>COLOR</h4>
-								
-								<a class="tag shop-color" href="#" style="background-color:#000000"></a>
-								<a class="tag shop-color" href="#" style="background-color:#FFFFFF"></a>
-								<a class="tag shop-color" href="#" style="background-color:#C0C0C0"></a>
-								<a class="tag shop-color" href="#" style="background-color:#0000E0"></a>
-								<a class="tag shop-color" href="#" style="background-color:#800080"></a>
-								<a class="tag shop-color" href="#" style="background-color:#FF0000"></a>
-								<a class="tag shop-color" href="#" style="background-color:#FF0080"></a>
-								<a class="tag shop-color" href="#" style="background-color:#FF6600"></a>
-								<a class="tag shop-color" href="#" style="background-color:#E0DCC8"></a>
-								<a class="tag shop-color" href="#" style="background-color:#F0E68C"></a>
-								<a class="tag shop-color" href="#" style="background-color:#FFFFD0"></a>
-								<a class="tag shop-color" href="#" style="background-color:#4B0082"></a>
-								<a class="tag shop-color" href="#" style="background-color:#666666"></a>
-								<a class="tag shop-color" href="#" style="background-color:#00FF00"></a>
-								<a class="tag shop-color" href="#" style="background-color:#36454F"></a>
-								<a class="tag shop-color" href="#" style="background-color:#F4A460"></a>
-								<a class="tag shop-color" href="#" style="background-color:#0088CC"></a>
-								<a class="tag shop-color" href="#" style="background-color:#B38B6D"></a>
-
-								<hr />
-
-								<div class="clearfix fs-12">
-									<a class="float-right fa fa-remove" href="#"></a>
-									SELECTED COLOR: <strong>Red</strong>
-								</div>
-							</div>
-							<!-- /COLOR -->
-
-
-							<!-- BRANDS -->
-							<div class="side-nav mb-60">
-
-								<div class="side-nav-head">
-									<button class="fa fa-bars"></button>
-									<h4>BRANDS</h4>
-								</div>
-
-								<ul class="list-group list-unstyled">
-									<li class="list-group-item"><a href="#"><span class="fs-11 text-muted float-right">(21)</span> Armani</a></li>
-									<li class="list-group-item"><a href="#"><span class="fs-11 text-muted float-right">(44)</span> Nike</a></li>
-									<li class="list-group-item"><a href="#"><span class="fs-11 text-muted float-right">(2)</span> Jolidon</a></li>
-									<li class="list-group-item"><a href="#"><span class="fs-11 text-muted float-right">(18)</span> Ralph Lauren</a></li>
-									<li class="list-group-item"><a href="#"><span class="fs-11 text-muted float-right">(87)</span> Lotto</a></li>
-									<li class="list-group-item"><a href="#"><span class="fs-11 text-muted float-right">(32)</span> Fila</a></li>
-									<li class="list-group-item"><a href="#"><span class="fs-11 text-muted float-right">(69)</span> Boss</a></li>
-								</ul>
-
-							</div>
-							<!-- BRANDS -->
+						
 
 						</div>
 
 					</div>
-					
 				</div>
 			</section>
 			<!-- / -->
