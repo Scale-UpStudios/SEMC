@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html @Html.Partial( "LanguageAttributes")>
+
+<head>
+    <meta charset="utf-8" />
+    <title>SEMC</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- WEB FONTS : use %7C instead of | (pipe) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+        rel="stylesheet" type="text/css" />
+
+    <link href="Content/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="Content/css/essentials.css" rel="stylesheet" />
+    <link href="Content/css/layout.css" rel="stylesheet" />
+
+    <link href="Content/css/header-1.css" rel="stylesheet" />
+    <link href="Content/css/layout-shop.css" rel="stylesheet" />
+    <link href="Content/css/core.css" rel="stylesheet" />
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body class="smoothscroll enable-animation">
+
+
+    <div id="wrapper">
+
+        <!-- Top Bar -->
+        <div id="topBar" class="dark">
+            <div class="container">
+
+                <!-- right -->
+                <ul class="top-links list-inline float-right">
+                    <li class="text-welcome hidden-xs-down">Welcome,
+                        <strong>John Doe</strong>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">
+                            <i class="fa fa-user hidden-xs-down"></i> MY ACCOUNT</a>
+                        <ul class="dropdown-menu float-right">
+                            <li>
+                                <a tabindex="-1" href="#">
+                                    <i class="fa fa-history"></i> ORDER HISTORY</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a tabindex="-1" href="#">
+                                    <i class="fa fa-bookmark"></i> MY WISHLIST</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#">
+                                    <i class="fa fa-edit"></i> MY REVIEWS</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#">
+                                    <i class="fa fa-cog"></i> MY SETTINGS</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a tabindex="-1" href="#">
+                                    <i class="glyphicon glyphicon-off"></i> LOGOUT</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs-down">
+                        <a href="login.html">LOGIN</a>
+                    </li>
+                    <li class="hidden-xs-down">
+                        <a href="register.html">REGISTER</a>
+                    </li>
+                </ul>
+
+                <!-- left -->
+                <ul class="top-links list-inline">
+                    <li class="hidden-xs-down">
+                        <a href="page-faq-1.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">USD</a>
+                        <ul class="dropdown-langs dropdown-menu">
+                            <li>
+                                <a tabindex="-1" href="#">USD</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a tabindex="-1" href="#">EUR</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#">GBP</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- /Top Bar -->
+
+        <!-- 
+            AVAILABLE HEADER CLASSES
+            
+            Default nav height: 96px
+            .header-md 		= 70px nav height
+            .header-sm 		= 60px nav height
+            
+            .b-0 		= remove bottom border (only with transparent use)
+            .transparent	= transparent header
+            .translucent	= translucent header
+            .sticky			= sticky header
+            .static			= static header
+            .dark			= dark header
+            .bottom			= header on bottom
+            
+            shadow-before-1 = shadow 1 header top
+            shadow-after-1 	= shadow 1 header bottom
+            shadow-before-2 = shadow 2 header top
+            shadow-after-2 	= shadow 2 header bottom
+            shadow-before-3 = shadow 3 header top
+            shadow-after-3 	= shadow 3 header bottom
+            
+            .clearfix		= required for mobile menu, do not remove!
+            
+            Example Usage:  class="clearfix sticky header-sm transparent b-0"
+        -->
+        <div id="header" class="navbar-toggleable-md sticky clearfix">
+
+            <!-- SEARCH HEADER -->
+            <!-- <div class="search-box over-header">
+                <a id="closeSearch" href="#" class="fa fa-remove"></a>
+                
+                <form action="page-search-result-1.html" method="get">
+                    <input type="text" class="form-control" placeholder="SEARCH" />
+                </form>
+            </div>  -->
+            <!-- /SEARCH HEADER -->
+
+
+            <!-- TOP NAV -->
+            <header id="topNav">
+                <div class="container">
+
+                    <!-- Mobile Menu Button -->
+                    <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- BUTTONS -->
+                    <ul class="float-right nav nav-pills nav-second-main">
+
+                        <!-- SEARCH -->
+                        <!-- <li class="search">
+                            <a href="javascript:;">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li> -->
+                        <!-- /SEARCH -->
+
+
+                    </ul>
+                    <!-- /BUTTONS -->
+
+                    <!-- Logo -->
+                    <a class="logo float-left" href="index.html">
+                        SEMC
+                        <!-- <img src="" alt="South East Market Corporation logo" /> -->
+                        <!-- <img src="Content/images/_smarty/logo_dark.png" alt="company logo" /> -->
+                    </a>
+
+                    <!-- 
+                        Top Nav 
+                        
+                        AVAILABLE CLASSES:
+                        submenu-dark = dark sub menu
+                    -->
+                    <div class="navbar-collapse collapse float-right nav-main-collapse">
+                        <div class="search-container float-left">
+                            <form action="search.html" method="get">
+                                <input type="text" class="form-control" placeholder="SEARCH" />
+                                <i class="fa fa-search"></i>
+                            </form>
+                        </div>
+
+                        <nav class="nav-main">
+
+                            <!--
+                                NOTE
+                                
+                                For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+                                Direct Link Example: 
+                                
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                            -->
+                            <ul id="topMain" class="nav nav-pills nav-main">
+                                <li class="dropdown mega-menu">
+                                    <!-- SHOP -->
+                                    <a class="dropdown-toggle" href="#">
+                                        SHOP
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="row">
+
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="shortcode-animations.html">ANIMATIONS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-buttons.html">BUTTONS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-carousel.html">CAROUSEL</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-charts.html">GRAPHS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-clients.html">CLIENTS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-columns.html">GRID &amp; COLUMNS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-counters.html">COUNTERS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-forms.html">FORM ELEMENTS</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="shortcode-dividers.html">DIVIDERS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-icon-boxes.html">BOXES &amp; ICONS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-galleries.html">GALLERIES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-headings.html">HEADING STYLES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-icon-lists.html">ICON LISTS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-labels.html">LABELS &amp; BADGES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-lightbox.html">LIGHTBOX</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-forms-editors.html">HTML EDITORS</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="shortcode-cards.html">Cards</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-maps.html">
+                                                                <span class="badge badge-success float-right">new</span> MAPS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-media-embeds.html">MEDIA EMBEDS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-modals.html">MODAL / POPOVER / NOTIF</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-navigations.html">NAVIGATIONS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-paginations.html">PAGINATIONS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-progress-bar.html">PROGRESS BARS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-widgets.html">WIDGETS</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="shortcode-pricing.html">PRICING BOXES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-process-steps.html">PROCESS STEPS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-callouts.html">CALLOUTS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-info-bars.html">INFO BARS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-blockquotes.html">BLOCKQUOTES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-responsive.html">RESPONSIVE</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-sections.html">SECTIONS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-social-icons.html">SOCIAL ICONS</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-md-5th">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="shortcode-alerts.html">ALERTS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-styled-icons.html">STYLED ICONS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-tables.html">TABLES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-tabs.html">TABS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-testimonials.html">TESTIMONIALS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-thumbnails.html">THUMBNAILS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-toggles.html">TOGGLES</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="shortcode-material-design-badges.html">
+                                                                <span class="badge badge-danger float-right">new</span>
+                                                                <b>MATERIAL DESIGN</b>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <!-- ABOUT -->
+                                    <a href="about.html">ABOUT</a>
+                                </li>
+                                <li>
+                                    <!-- CONTACT -->
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li>
+                                    <!-- FAQ -->
+                                    <a href="#">FAQ</a>
+                                </li>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+
+                </div>
+            </header>
+            <!-- /Top Nav -->
+
+        </div>
+
+
+        <!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+			<section class="page-header">
+				<div class="container">
+
+					<h1>LOGIN</h1>
+
+					<!-- breadcrumbs -->
+					<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pages</a></li>
+						<li class="active">Login</li>
+					</ol><!-- /breadcrumbs -->
+
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->
+
+
+        <!-- -->
+			<section>
+				<div class="container">
+					
+					<div class="row">
+
+						<!-- LOGIN -->
+						<div class="col-md-6 col-sm-6">
+
+							<!-- login form -->
+							<form action="#" method="post" class="sky-form boxed">
+
+								<header class="fs-18 mb-20">
+									I'm a returning customer
+								</header>
+								
+								<fieldset class="m-0">
+
+									<label class="input mb-10">
+										<i class="ico-append fa fa-envelope"></i>
+										<input required type="email" placeholder="Email address">
+										<b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+									</label>
+								
+									<label class="input mb-10">
+										<i class="ico-append fa fa-lock"></i>
+										<input required type="password" placeholder="Password">
+										<b class="tooltip tooltip-bottom-right">Only latin characters and numbers</b>
+									</label>
+
+									<div class="clearfix note mb-30">
+										<a class="float-right" href="#">Forgot Password?</a>
+									</div>
+									
+									<label class="checkbox fw-300">
+										<input type="checkbox" name="checkbox-inline">
+										<i></i> Keep me logged in
+									</label>
+
+								</fieldset>
+
+								<footer>
+									<button type="submit" class="btn btn-primary rad-0 float-right"><i class="fa fa-check"></i> OK, LOG IN</button>
+								</footer>
+
+							</form>
+							<!-- /login form -->
+
+							<!-- ALERT -->
+							<div class="alert alert-mini alert-danger mb-30">
+								<strong>Oh snap!</strong> Login Incorrect!
+							</div><!-- /ALERT -->
+
+						</div>
+						<!-- /LOGIN -->
+
+						<!-- SOCIAL LOGIN -->
+						<div class="col-md-6 col-sm-6">
+							<form action="#" method="post" class="sky-form boxed">
+
+								<header class="fs-18 mb-20">
+									Sign In using your favourite social network
+								</header>
+								
+								<fieldset class="m-0">
+
+									<div class="row">
+									
+										<div class="col-md-8 offset-md-2">
+
+											<a class="btn btn-block btn-social btn-facebook mb-10">
+												<i class="fa fa-facebook"></i> Sign in with Facebook
+											</a>
+
+											<a class="btn btn-block btn-social btn-twitter mb-10">
+												<i class="fa fa-twitter"></i> Sign in with Twitter
+											</a>
+
+											<a class="btn btn-block btn-social btn-google mb-10">
+												<i class="fa fa-google-plus"></i> Sign in with Google
+											</a>
+									
+										</div>
+									</div>
+
+								</fieldset>
+
+								<footer>
+									Don't have an account yet? <a href="register.html"><strong>Click to register!</strong></a>
+								</footer>
+
+							</form>
+
+						</div>
+						<!-- /SOCIAL LOGIN -->
+
+					</div>
+
+					
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container">
+
+                <div class="row mt-60 mb-40 fs-13">
+
+                    <!-- col #1 -->
+                    <div class="col-md-4 col-sm-4">
+
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            SEMC logo
+                        </div>
+                        <!-- <img class="footer-logo" src="" alt="South East Market Corporation logo" /> -->
+
+                        <p>
+                            © 2018 South East Market Corporation. All rights reserved.
+                        </p>
+
+                        <h2>(800) 123-4567</h2>
+
+                        <!-- Social Icons -->
+                        <div class="clearfix">
+
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top"
+                                title="Facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top"
+                                title="Twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top"
+                                title="Google plus">
+                                <i class="icon-gplus"></i>
+                                <i class="icon-gplus"></i>
+                            </a>
+
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top"
+                                title="Linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+
+                            <a href="#" class="social-icon social-icon-sm social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top"
+                                title="Rss">
+                                <i class="icon-rss"></i>
+                                <i class="icon-rss"></i>
+                            </a>
+
+                        </div>
+                        <!-- /Social Icons -->
+
+                    </div>
+                    <!-- /col #1 -->
+
+                    <!-- col #2 -->
+                    <div class="col-md-8 col-sm-8">
+
+                        <div class="row">
+
+                            <div class="col-md-4 hidden-sm hidden-xs-down">
+                                <h4 class="letter-spacing-1">COMPANY INFO</h4>
+                                <ul class="list-unstyled footer-list half-paddings b-0">
+                                    <li>
+                                        <a class="block" href="#">
+                                            <i class="fa fa-angle-right"></i> About Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="block" href="#">
+                                            <i class="fa fa-angle-right"></i> Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="block" href="#">
+                                            <i class="fa fa-angle-right"></i> FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4 hidden-sm hidden-xs-down">
+                                <h4 class="letter-spacing-1">CUSTOMER CARE</h4>
+                                <ul class="list-unstyled footer-list half-paddings b-0">
+                                    <li>
+                                        <a class="block" href="#">
+                                            <i class="fa fa-angle-right"></i> Payment</a>
+                                    </li>
+                                    <li>
+                                        <a class="block" href="#">
+                                            <i class="fa fa-angle-right"></i> How to Buy</a>
+                                    </li>
+                                    <li>
+                                        <a class="block" href="#">
+                                            <i class="fa fa-angle-right"></i> Shipping & Delivery</a>
+                                    </li>
+                                    <li>
+                                        <a class="block" href="#">
+                                            <i class="fa fa-angle-right"></i> How to Return</a>
+                                    </li>
+                                    <li>
+                                        <a class="block" href="#">
+                                            <i class="fa fa-angle-right"></i> Questions</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h4 class="letter-spacing-1">SECURE PAYMENT</h4>
+                                <p>Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim
+                                    sit amet.</p>
+                                <p>
+                                    <!-- see Content/images/_smarty/cc/ for more icons -->
+                                    <img src="Content/images/_smarty/cc/Visa.png" alt="" />
+                                    <img src="Content/images/_smarty/cc/Mastercard.png" alt="" />
+                                    <img src="Content/images/_smarty/cc/Maestro.png" alt="" />
+                                    <img src="Content/images/_smarty/cc/PayPal.png" alt="" />
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /col #2 -->
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    <ul class="float-right m-0 list-inline mobile-block">
+                        <li>
+                            <a href="#">Terms &amp; Conditions</a>
+                        </li>
+                        <li>&bull;</li>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                    </ul>
+
+                    &copy; 2018 South East Market Corporation. All rights reserved.
+                </div>
+            </div>
+
+        </footer>
+        <!-- /FOOTER -->
+
+
+
+        <!-- 
+            HOME SHOP - MODAL ON LOAD 
+            
+            data-autoload="true" 			- load modal on page load
+            data-autoload-delay="2000"		- load after 2000 ms (1000ms = 1s)
+        -->
+        <div id="shopLoadModal" class="modal fade" data-autoload="true" data-autoload-delay="2000">
+            <div class="modal-dialog modal-full">
+                <div class="modal-content" style="background-image:url('Content/images/_smarty/misc/shop/shop_modal.jpg');">
+
+                    <!-- header modal -->
+                    <div class="modal-header b-0">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                    <!-- body modal -->
+                    <div class="modal-body">
+
+                        <div class="block-content">
+
+                            <img src="Content/images/_smarty/logo-footer-dark.png" alt="" />
+                            <p class="fs-13 mb-20 mt-30">Subscribe to the Smarty newsletter to get all new products and all new discounts.</p>
+
+                            <!-- newsletter -->
+                            <div class="inline-search clearfix mb-20">
+                                <form action="php/newsletter.php" method="post" class="validate m-0" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right"
+                                    novalidate="novalidate">
+
+                                    <input type="search" placeholder="Email Address" id="shop_email" name="shop_email" class="serch-input required">
+                                    <button type="submit">
+                                        <i class="fa fa-check"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- /newsletter -->
+
+                            <!-- Don't show this popup again -->
+                            <div class="fs-11 text-left">
+                                <label class="checkbox float-left">
+                                    <input class="loadModalHide" type="checkbox" />
+                                    <i></i>
+                                    <span class="fw-300">Don't show this popup again</span>
+                                </label>
+
+                            </div>
+                            <!-- /Don't show this popup again -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /HOME SHOP - MODAL ON LOAD -->
+
+    </div>
+    <!-- /wrapper -->
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="inner">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <!-- /PRELOADER -->
+
+
+    <!-- footer css -->
+    <!-- footer scripts -->
+
+    <script type="text/javascript">
+        var plugin_path = 'Content/plugins/';
+    </script>
+    <script src="Content/plugins/jquery/jquery-3.2.1.min.js" type="application/javascript"></script>
+
+    <script src="Content/js/scripts.js"></script>
+</body>
+
+</html>
